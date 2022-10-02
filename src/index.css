@@ -1,13 +1,28 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.nav-link-style{
+  @apply text-gray-600 hover:text-purple-600 p-4
+}
+.hero-p-style{
+  @apply uppercase text-gray-600 tracking-wide
+}
+.d-none{
+  @apply hidden
+}
+.d-visible{
+  @apply block
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.product_color_styled{
+ @apply h-5 w-5 mr-2 shadow-md rounded-full
+}
+.product_sizes_styled{
+  @apply border-2 text-xs rounded border-slate-300 text-gray-400 hover:text-gray-800 p-2 mr-2 cursor-pointer
+}
+.product_btns_styled{
+  @apply py-2 px-4 rounded-full text-gray-50  flex items-center justify-center cursor-pointer text-sm
+  py-2 px-4 rounded-full text-gray-50  flex items-center justify-center cursor-pointer text-sm
 }
